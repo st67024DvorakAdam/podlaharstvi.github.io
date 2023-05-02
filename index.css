@@ -30,7 +30,11 @@ nav a {
   background-color: #f8f9fa;
 }
 
-
+@media only screen and (max-width: 667px) {
+  body {
+    zoom: 80%;
+  }
+}
 
 /* Základní styly */
 body {
@@ -104,6 +108,12 @@ img {
   border: #007bff 1px solid;
   background-color: #e3e6e8;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  #reference li {
+    width: 100%;
+  }
 }
 
 /* Styly pro sekci o nás */

@@ -30,7 +30,11 @@
     background-color: #f8f9fa;
   }
   
-  
+  @media only screen and (max-width: 667px) {
+    body {
+      zoom: 80%;
+    }
+  }
   
   /* Základní styly */
   body {

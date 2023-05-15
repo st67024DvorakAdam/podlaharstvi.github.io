@@ -64,7 +64,7 @@ function downloadPrice(){
   text += "Ošetření podlahy:        " + result.val5 + "\n\n";
   text += "Cena podlahy s pokládkou:" + result.val1 + "m² * " + result.val3 + "Kč/m² = " + result.val1*result.val3 + "Kč\n";
   if(result.val4){
-  text += "Olištování podlahy:      " + Math.sqrt(result.val1)*4 + "m * 20Kč/m = " + (Math.sqrt(result.val1)*4)*20 + "Kč\n";
+  text += "Olištování podlahy:      " + Math.round((Math.sqrt(result.val1)*4)*100)/100 + "m * 20Kč/m = " + Math.round(((Math.sqrt(result.val1)*4)*20)*100)/100 + "Kč\n";
   }
   if(result.val5){
   text += "Ošetření podlahy:        " + result.val1 + "m² * 15Kč/m² = " + result.val1*15 + "Kč\n";

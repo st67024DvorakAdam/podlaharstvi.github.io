@@ -31,16 +31,21 @@ function calculatePrice(){
   }
 
   var result = roomSize*priceOfFloor;
-
+  result = result.toFixed(2);
+  
   border = document.getElementById("room-border").checked;
   if(border){
     result += (Math.sqrt(roomSize)*4)*borders;
   }
 
+  border = border.toFixed(2);
+  
   care = document.getElementById("floor-care").checked;
   if(care){
     result += roomSize*protection;
   }
+  
+  care = care.toFixed(2);
 
   result = Math.round(result);
   result += " Kč"
